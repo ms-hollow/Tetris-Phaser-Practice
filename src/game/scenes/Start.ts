@@ -1,5 +1,7 @@
 import Phaser from 'phaser';
 
+// TODO pagandahin pa ang start
+
 class Start extends Phaser.Scene {
     constructor() {
         super({ key: 'Start' });
@@ -9,6 +11,7 @@ class Start extends Phaser.Scene {
         // Load game assets
         this.load.setPath('assets');
         this.load.image('background', 'bg.jpg');
+        this.load.image('car', 'car.jpg');
     }
 
     create() {
@@ -22,7 +25,7 @@ class Start extends Phaser.Scene {
         let playButton = this.add.text(this.scale.width / 2, this.scale.height * 0.7, 'PLAY', {
             fontFamily: 'Arial',
             fontSize:'60px',
-            color: '#0c0e47',
+            color: '#ffffff',
         })
         .setOrigin(0.5)
         .setInteractive()
@@ -30,7 +33,7 @@ class Start extends Phaser.Scene {
             this.scene.start('Game'); // Kapag pinindot, start game // punta sa game scene
         })
         .on('pointerover', () => {
-            playButton.setStyle({ color: '#383fff' }); // change text color when hover
+            playButton.setStyle({ color: '#90EE90' }); // change text color when hover
         })
         .on('pointerout', () => {
             playButton.setStyle({ color: '#ffffff' }); // change text color back to orig color

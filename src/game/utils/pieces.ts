@@ -14,8 +14,8 @@ export const COLORS = [
     0x1E90FF, // Dodger Blue
     0xFFD700, // Gold
     0x8A2BE2, // Blue Violet
-    0xDC143C, // Crimson
+    0xFF1493, // Deep Pink 
     0x32CD32, // Green
     0xFF4500, // Orange Red
-    0xFF69B4  // Pink
+    0xA52A2A  // Brown 
 ];

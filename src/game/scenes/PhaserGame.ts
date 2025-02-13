@@ -19,10 +19,10 @@ const config: Phaser.Types.Core.GameConfig = {
         mode: Phaser.Scale.FIT,
         parent: 'game-container',
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: 1368,
-        height: 768,
-        // width: 1920,
-        // height: 800
+        // width: 1368,
+        // height: 768,
+        width: 1920,
+        height: 800
     }
 };
 
